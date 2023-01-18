@@ -1,10 +1,7 @@
 @ECHO OFF
-
-TITLE Initializing Network...
-wpeutil.exe InitializeNetwork
 cls
 
-TITLE Preparing K-Disk...
+TITLE Identify USB...
 FOR %%i IN (C D E F G H I J K L M N O P Q R S T U V W X Y Z) DO IF EXIST %%i:\BootDisk_Scripts\RUN_SCRIPT.CMD ( 
 SET DrvLtr=%%i
 GOTO END)
